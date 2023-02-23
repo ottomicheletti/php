@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulando CSS com PHP</title>
+  </head>
+  <body>
+    <form action="css_manipulation.php" method="post">
+      <fieldset>
+        Palavra: <input type="text" name="word" />
+        <br />
+        Cor: <input type="color" name="color" />
+        <br />
+        Tamanho: <input type="range" name="size" min="10" max="46" step="2" />
+        <br>
+        Underline <input type="radio" name="decoration" value="underline" />
+        Line-through <input type="radio" name="decoration" value="line-through" />
+        <br>
+        <input type="submit" value="Gerar">
+      </fieldset>
+    </form>
+  </body>
+</html>
