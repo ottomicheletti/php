@@ -15,7 +15,7 @@
     $n2 = $_GET["n2"]; // "n2" é pego dos parâmetros da URL
     $media = ($n1 + $n2) / 2;
     echo "A média entre $n1 e $n2 é " . number_format($media, 2);
-    echo "O aluno está " . (($media > 7) ? "APROVADO" : "REPROVADO");
+    echo "<br/>O aluno está " . (($media > 7) ? "APROVADO" : "REPROVADO");
   ?>
 </body>
 
