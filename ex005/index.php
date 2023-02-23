@@ -11,8 +11,8 @@
 <body>
   <?php
     // Testar com a URL http://localhost/php/ex004/?x=9&y=-3
-    $x = $_GET["x"]; // "a" é pego dos parâmetros da URL
-    $y = $_GET["y"]; // "b" é pego dos parâmetros da URL
+    $x = $_GET["x"]; // "x" é pego dos parâmetros da URL
+    $y = $_GET["y"]; // "y" é pego dos parâmetros da URL
     $z = &$x;
 
     echo "O valor de X é " . $x;
