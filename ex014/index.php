@@ -31,7 +31,6 @@
 
       echo $caneta2->getModelo();
       echo $caneta2->getPonta();
-
     ?>
   </pre>
 </body>
