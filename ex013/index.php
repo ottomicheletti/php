@@ -12,9 +12,7 @@
 
     $caneta1 = new Caneta;
     $caneta1->cor = "Azul";
-    $caneta1->ponta = 0.5;
-    $caneta1->carga = 100;
-    $caneta1->tampada = true;
+    $caneta1->modelo = "BIC Cristal";
 
     // Tenta a ação de rabiscar:
     $caneta1->rabiscar();
@@ -33,9 +31,6 @@
 
     $caneta2 = new Caneta;
     $caneta2->cor = "Vermelha";
-    $caneta2->ponta = 0.5;
-    $caneta2->carga = 50;
-    $caneta2->tampada = true;
 
     // Destampar a caneta:
     $caneta2->destampar();
