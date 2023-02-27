@@ -9,6 +9,7 @@
 <body>
   <?php
     require_once "./Lutador.php";
+    require_once "./Luta.php";
 
     $lutadores = array();
     $lutadores[0] = new Lutador("Pretty Boy", "França", 30, 1.75, 90.9, 11, 2, 1);
@@ -18,6 +19,15 @@
     $lutadores[4] = new Lutador("UFOCobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3);
     $lutadores[5] = new Lutador("Nerdart", "EUA", 30, 1.81, 105.7, 12, 2, 4);
 
+    // Luta não aprovada
+    $UEC1 = new Luta();
+    $UEC1->marcarLuta($lutadores[0], $lutadores[1]);
+
+    // Luta aprovada
+    $UEC2 = new Luta();
+    $UEC2->marcarLuta($lutadores[2], $lutadores[3]);
+    $UEC2->lutar();
+    $lutadores[2]->status();
     $lutadores[3]->status();
   ?>
 </body>

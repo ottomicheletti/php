@@ -102,6 +102,7 @@
       echo "Ganhou: " . $this->getVitorias() . "<br>";
       echo "Perdeu: " . $this->getDerrotas() . "<br>";
       echo "Empatou: " . $this->getEmpates() . "<br>";
+      echo "<br>";
     }
 
     public function status() {
@@ -111,6 +112,7 @@
       echo $this->getVitorias() . " vitórias<br>";
       echo $this->getDerrotas() . " derrotas<br>";
       echo $this->getEmpates() . " empates<br>";
+      echo "<br>";
     }
 
     public function ganharLuta() {
